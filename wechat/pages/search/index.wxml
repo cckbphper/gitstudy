@@ -1,0 +1,30 @@
+<!--搜索框-->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+>
+	<view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+
+<!--热门搜索-->
+<view class="my-view">
+	热门搜索
+</view>
+<view class="my-view">
+	<van-row gutter="5">
+		<van-col span="8"><van-tag round type="success" size="medium">标签2</van-tag></van-col>
+		<van-col span="8"><van-tag round type="success" size="medium">标签122</van-tag></van-col>
+		<van-col span="8"><van-tag round type="success" size="medium">标签1312</van-tag></van-col>
+	</van-row>
+</view>
+
+<view class="my-view">
+	<van-row gutter="5">
+		<van-col span="8"><van-tag round type="success" size="medium">标签213213</van-tag></van-col>
+		<van-col span="8"><van-tag round type="success" size="medium">标签1212</van-tag></van-col>
+		<van-col span="8"><van-tag round type="success" size="medium">标签12312</van-tag></van-col>
+	</van-row>
+</view>
